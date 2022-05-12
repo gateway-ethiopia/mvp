@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           }}
         >
           <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content h-60">
+          <div className="absolute top-20">
             <SearchBar />
           </div>
         </div>
