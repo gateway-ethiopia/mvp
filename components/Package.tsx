@@ -1,19 +1,18 @@
 import { ReactNode } from 'react'
 
 export default function Package({
+  img,
   title,
   children,
 }: {
+  img: string
   title: string
   children: ReactNode
 }) {
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>
-        <img
-          alt="Shoes"
-          src="https://i0.wp.com/www.ethiopiaobserver.com/wp-content/uploads/2019/06/DSC02363.jpg?fit=2160%2C1620&ssl=1"
-        />
+        <img alt="Shoes" src={img} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
