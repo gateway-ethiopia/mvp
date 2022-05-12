@@ -1,11 +1,15 @@
 import type { NextPage } from 'next'
-import Package from '../components/Package'
+import Head from 'next/head'
 
+import Package from '../components/Package'
 import SearchBar from '../components/SearchBar'
 
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Gateway Ethiopia</title>
+      </Head>
       <header>
         <div className="fixed navbar bg-base-200">
           <div className="flex-1">
