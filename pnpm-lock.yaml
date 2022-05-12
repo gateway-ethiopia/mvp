@@ -4,6 +4,7 @@ specifiers:
   '@heroicons/react': ^1.0.6
   '@types/node': 17.0.4
   '@types/react': 17.0.38
+  '@types/react-date-range': ^1.4.3
   autoprefixer: ^10.4.0
   daisyui: ^2.14.3
   date-fns: ^2.28.0
@@ -29,6 +30,7 @@ dependencies:
 devDependencies:
   '@types/node': 17.0.4
   '@types/react': 17.0.38
+  '@types/react-date-range': 1.4.3
   autoprefixer: 10.4.7_postcss@8.4.13
   postcss: 8.4.13
   prettier: 2.6.2
@@ -182,6 +184,13 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/react-date-range/1.4.3:
+    resolution: {integrity: sha512-hCZOoRPcyb+st3mZhcyPYnBQ83h0eNcTfCjPTj5EgqrPKnMGCy58TiEJXHV0ozCMOtLqH7Y80ldc19SKfKbuXA==}
+    dependencies:
+      '@types/react': 17.0.38
+      date-fns: 2.28.0
     dev: true
 
   /@types/react/17.0.38:
@@ -345,7 +354,6 @@ packages:
   /date-fns/2.28.0:
     resolution: {integrity: sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==}
     engines: {node: '>=0.11'}
-    dev: false
 
   /defined/1.0.0:
     resolution: {integrity: sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=}
