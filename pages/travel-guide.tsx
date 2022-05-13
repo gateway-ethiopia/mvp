@@ -1,14 +1,15 @@
-import NavBar from '../components/NavBar'
+import Head from 'next/head'
 
 import {
   MailIcon,
   PhoneIcon,
-  LocationMarkerIcon,
   GlobeIcon,
+  LocationMarkerIcon,
 } from '@heroicons/react/outline'
 
+import NavBar from '../components/NavBar'
+import Review from '../components/Review'
 import Package from '../components/Package'
-import Head from 'next/head'
 
 export default function TravelGuide() {
   return (
@@ -90,6 +91,50 @@ export default function TravelGuide() {
                 <b>buna</b>) is an essential element of culture in Ethiopia.
                 Join us on a coffee and tea trip to Ethiopia."
               </Package>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container mx-auto py-10">
+            <h1 className="my-10 text-2xl">Reviews and Ratings</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Review
+                name="Leasly Doe"
+                title="Unforgettable experience"
+                avatar="https://api.lorem.space/image/face?random=1"
+              >
+                I had pleasure to join two tours North and South Ethiopia . Both
+                was really great!!! The same country but so different .....Omo
+                valley is really interesting however people there are getting
+                paid for white people. North Ethiopia is orthodox catholic
+                story. Andrzej our guide has a lots of knowledge about Africa.
+                Thanks a lot Tomeless Ethiopia
+              </Review>
+
+              <Review
+                name="Dakota Jones"
+                title="Fantastic"
+                avatar="https://api.lorem.space/image/face?random=2"
+              >
+                "The tour was very nice is the best travel we have they have a
+                lot of experience and they know exactly what to do the guides
+                were very knowledgeable the driver abdou was a nice guy very
+                friendly. It was a experience of a lifetime it was amazing."
+              </Review>
+              <Review
+                name="Charlie Kelly"
+                title="Excellent Service!!!"
+                avatar="https://api.lorem.space/image/face?random=3"
+              >
+                My wife and I came back recently from our trip to Ethiopia,
+                where we had the opportunity to go from Timeless Ethiopia to the
+                Omo Valley, Siemen and Harar. If you plan to book a guided tour
+                to Ethiopia, I highly recommend Timeless Ethiopia! Habtamu Mamo,
+                the owner of TE is also the owner of the Heyday hotel in Addis
+                Ababa. Therefore, it is not a company whose only potential is a
+                website and a mobile phone. And there are unfortunately many
+                such in Ethiopia
+              </Review>
             </div>
           </div>
         </section>

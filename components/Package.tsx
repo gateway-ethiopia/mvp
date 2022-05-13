@@ -22,32 +22,27 @@ export default function Package({
             <input
               disabled={true}
               type="radio"
-              name="rating-2"
               className="mask mask-star-2 bg-orange-400"
             />
             <input
               disabled={true}
               type="radio"
-              name="rating-2"
               className="mask mask-star-2 bg-orange-400"
               checked
             />
             <input
               disabled={true}
               type="radio"
-              name="rating-2"
               className="mask mask-star-2 bg-orange-400"
             />
             <input
               disabled={true}
               type="radio"
-              name="rating-2"
               className="mask mask-star-2 bg-orange-400"
             />
             <input
               disabled={true}
               type="radio"
-              name="rating-2"
               className="mask mask-star-2 bg-orange-400"
             />
           </div>
