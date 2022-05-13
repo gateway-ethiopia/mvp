@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
 import mapboxgl from 'mapbox-gl'
 
-
 import EventCard from '../components/EventCard'
 import ProductCard from '../components/ProductCard'
 import Footer from '../components/Footer'
@@ -46,16 +45,7 @@ export default function Attraction() {
           />
           <div className="absolute top-0 bg-black h-[100%] w-[100%] bg-opacity-40" />
           <div className="absolute top-[20%] px-5 py-2text-center w-[1000px] space-y-10">
-            <p className="text-3xl z-20 text-white font-bold">Harar</p>
-            <p className="text-left text-xl text-white">
-              Found in the Eastern part of Ethiopia, along the road towards
-              Djibouti, Harar is by far the most significant Islamic community
-              in Ethiopia and offers a fascinating contrast to the
-              Christian-dominated historical sites in the North of the country.
-              Dating back to 1520, Harar is now a UNESCO World Heritage Site and
-              for those who have the time and inclination it’s well worth a
-              visit to see a totally different side of Ethiopia.
-            </p>
+      
           </div>
         </div>
         {/* About Section */}
@@ -64,15 +54,13 @@ export default function Attraction() {
             About{' '}
           </h1>
           <p className="w-[1200px] text-lg ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-            aliquam delectus repudiandae error incidunt eaque, dolore nulla ad
-            nesciunt perspiciatis laudantium magnam sunt illo fugiat,
-            accusantium inventore veniam est cumque.100Lorem ipsum dolor, sit
-            amet consectetur adipisicing elit. Harum aliquam delectus
-            repudiandae error incidunt eaque, dolore nulla ad nesciunt
-            perspiciatis laudantium magnam sunt illo fugiat, accusantium
-            inventore veniam est cumque.100Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Harum aliquam delectus repudiandae
+          Found in the Eastern part of Ethiopia, along the road towards
+              Djibouti, Harar is by far the most significant Islamic community
+              in Ethiopia and offers a fascinating contrast to the
+              Christian-dominated historical sites in the North of the country.
+              Dating back to 1520, Harar is now a UNESCO World Heritage Site and
+              for those who have the time and inclination it’s well worth a
+              visit to see a totally different side of Ethiopia. Harum aliquam delectus repudiandae
             error incidunt eaque, dolore nulla ad nesciunt perspiciatis
             laudantium magnam sunt illo fugiat, accusantium inventore veniam est
             cumque.100Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -88,40 +76,43 @@ export default function Attraction() {
             Events
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-9 md:gap-y-9 space-y-9 md:space-y-0">
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            <EventCard
+              img="https://onestep4ward.com/wp-content/uploads/2015/08/DSC01129-2.jpg"
+              title="Hyena Feeding"
+              desc="It turns out the tradition of feeding wild hyenas in Harar dates back decades. They used to leave food offerings in the hills so the hyenas wouldn't eat the livestock in times of drought. Someone had the bright idea of luring the hyenas to the old city of Harar and then feeding them meat as a tourist display."
+              date="May 14 2022"
+            />
+            <EventCard img='https://www.aspireethiopiatours.com/wp-content/uploads/2020/05/Kulbi.jpg' title = 'kulubi gebreal' desc = 'Kulubi is known for its large church, dedicated to St. Gabriel, which is the site of massive twice-yearly pilgrimages (on 26 July and 28 December) attended by tens of thousands of Orthodox pilgrims.' date = 'July 26 2022'/>
           </div>
         </div>
         {/* shoping */}
         <div className="mt-20 flex flex-col items-center px-8">
           <h1 className="font-bold text-4xl mb-8 first-letter:text-[#570df8] first-letter:font-extrabold">
-            Featured Products
+            Related Products
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-9 md:gap-y-9 space-y-9 md:space-y-0">
             <ProductCard
               price={10}
-              img="https://haddisart.com/uploads/arts/1650401598286-art-IMG_20220304_230651_530.jpg"
-              title="Lion of judah"
+              img="https://c8.alamy.com/comp/2A9JB9E/ethiopia-east-hararghe-harar-interior-of-rewda-guest-house-traditional-decor-of-woven-baskets-2A9JB9E.jpg"
+              title="Home WallArt"
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Perspiciatis, eum.
             </ProductCard>
             <ProductCard
               price={20}
-              img="https://haddisart.com/uploads/arts/1626174297764-art-FB_IMG_16260666812065696.jpg"
-              title="Wall clock string art"
+              img="https://d2j6dbq0eux0bg.cloudfront.net/images/16648100/1598115045.jpg"
+              title="Harar Cultural Cloth"
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Perspiciatis, eum.
             </ProductCard>
             <ProductCard
-              price={30}
-              img="https://haddisart.com/uploads/arts/1647367030924-art-IMG_6347.JPG"
-              title="Mama Africa"
+              price={100}
+              img="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/harar-market-yoseph-abate.jpg"
+              title="Harar Market Painting"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Perspiciatis, eum.
+              Harar Market Painting
             </ProductCard>
           </div>
         </div>

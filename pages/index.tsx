@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <div
           className="hero min-h-screen"
           style={{
-            backgroundImage: 'url(/gondar.jpg)',
+            backgroundImage: 'url(/baner.jpg)',
           }}
         >
           <div className="hero-overlay bg-opacity-50"></div>
@@ -28,12 +28,7 @@ const Home: NextPage = () => {
           </div>
           <div className="hero-content text-center">
             <div className="max-w-md text-white">
-              <h1 className="text-5xl font-bold">Gondar</h1>
-              <p className="py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                omnis recusandae rerum exercitationem ad maiores aut quibusdam,
-                velit veniam at.
-              </p>
+              <h1 className="text-5xl font-bold ">Choose your next destination</h1>
             </div>
           </div>
         </div>
