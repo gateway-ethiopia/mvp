@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <div
           className="hero min-h-screen"
           style={{
-            backgroundImage: 'url(/sample.jpg)',
+            backgroundImage: 'url(/gondar.jpg)',
           }}
         >
           <div className="hero-overlay bg-opacity-50"></div>
