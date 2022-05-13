@@ -64,7 +64,7 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <Link href="/attraction">
+              <Link href="/attractionlist">
                 <a>Attraction</a>
               </Link>
             </li>

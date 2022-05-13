@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
 import mapboxgl from 'mapbox-gl'
-
+import NavBar from '../components/NavBar'
 import EventCard from '../components/EventCard'
 import ProductCard from '../components/ProductCard'
 import Footer from '../components/Footer'
@@ -36,6 +36,7 @@ export default function Attraction() {
         />
       </Head>
       <div>
+        <NavBar />
         {/* silde banner */}
         <div className="relative top-0 h-[600px]  flex flex-col items-center">
           <img
