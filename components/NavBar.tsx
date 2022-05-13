@@ -52,19 +52,19 @@ export default function NavBar() {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>
-                <Link href="/home">Home</Link>
-              </a>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li>
-              <a className="justify-between">
-                <Link href="/travel-guide">Travel Guide Profile Page</Link>
-              </a>
+              <Link href="/travel-guide">
+                <a className="justify-between">Travel Guide Profile Page</a>
+              </Link>
             </li>
             <li>
-              <a>
-                <Link href="/search">Search Result Page</Link>
-              </a>
+              <Link href="/search">
+                <a>Search Result Page</a>
+              </Link>
             </li>
           </ul>
         </div>
