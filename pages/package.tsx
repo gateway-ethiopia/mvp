@@ -68,11 +68,7 @@ export default function Package() {
         </section>
 
         <section className=" col-span-1 h-screen overflow-hidden">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://maps.google.com/maps?output=embed"
-          />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252230.01327006862!2d38.63805764720653!3d8.963489651802567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1652444725753!5m2!1sen!2set" width="100%" height="100%"loading="lazy"></iframe>
         </section>
       </section>
       <Footer />
