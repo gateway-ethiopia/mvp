@@ -59,13 +59,13 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <Link href="/travel-guide">
-                <a className="justify-between">Travel Guide Profile Page</a>
+              <Link href="/tour-guide">
+                <a className="justify-between">Tour Guide</a>
               </Link>
             </li>
             <li>
-              <Link href="/search">
-                <a>Search Result Page</a>
+              <Link href="/attraction">
+                <a>Attraction</a>
               </Link>
             </li>
           </ul>
