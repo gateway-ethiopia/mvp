@@ -14,11 +14,7 @@ export default function NavBar() {
   }, [darkMode])
 
   return (
-<<<<<<< HEAD
     <div className="z-30 fixed navbar bg-base-200">
-=======
-    <div className="z-10 sticky top-0 navbar bg-base-200">
->>>>>>> 486459d8e04da232588d65e39f13a91a4c7df07d
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">
           <span className="text-primary">Gateway</span> Ethiopia
