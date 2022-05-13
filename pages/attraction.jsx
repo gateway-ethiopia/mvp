@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar'
 import EventCard from '../components/EventCard'
 import ProductCard from '../components/ProductCard'
 import Footer from '../components/Footer'
-
+import TourCompany from '../components/TourCompany'
 mapboxgl.accessToken =
   'pk.eyJ1IjoieW9uaWJhYmkiLCJhIjoiY2toa20xdXg4MWNsbTJ6cDk0d25iM2drZCJ9.4LLM8wFPWi0vRWH6cWb0GA'
 
@@ -120,6 +120,17 @@ export default function Attraction() {
         {/* map */}
         <div className="mt-5">
           <div ref={mapContainer} className="h-[400px]" />
+        </div>
+        {/* TourCompany */}
+        <div className="mt-20 flex flex-col items-center">
+        <h1 className="font-bold text-4xl mb-8 first-letter:text-[#570df8] first-letter:font-extrabold ">
+            {' '}
+            Tour Companies
+          </h1>
+        <div className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-9 md:gap-y-9 space-y-9 md:space-y-0'>
+          <TourCompany img = 'https://www.timelessethiopia.com/images/xlogo.png.pagespeed.ic.YR6CgfekbN.webp' title = 'Timeless Ethiopia' />
+          <TourCompany img = 'https://www.imagineethiopiatours.com/images/logo.svg' title = 'Imagine Ethiopia Tours'/>
+        </div>
         </div>
         <div className="mt-10">
           <Footer />
