@@ -11,9 +11,10 @@ export default function Package({
 }) {
   return (
     <div className="card bg-base-100 shadow-xl">
-      <figure>
-        <img alt="Shoes" src={img} />
-      </figure>
+      <div
+        className="w-full h-96 bg-blue-400 bg-center bg-cover"
+        style={{ backgroundImage: `url(${img})` }}
+      />
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{children}</p>

@@ -41,24 +41,18 @@ const Home: NextPage = () => {
       <main className="container mx-auto px-4 py-32">
         <h1 className="text-5xl mb-10">Popular Packages</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Package
-            img="https://i0.wp.com/www.ethiopiaobserver.com/wp-content/uploads/2019/06/DSC02363.jpg?fit=2160%2C1620&ssl=1"
-            title="COFFEE & TEA TOUR in ETHIOPIA"
-          >
+          <Package img="/coffee.avif" title="COFFEE & TEA TOUR in ETHIOPIA">
+            Drinking coffee (which in the Amharic language is called <b>buna</b>
+            ) is an essential element of culture in Ethiopia. Join us on a
+            coffee and tea trip to Ethiopia."
+          </Package>
+          <Package img="/lalibela.avif" title="Historic Route & Lalibela Tour">
             Drinking coffee (which in the Amharic language is called <b>buna</b>
             ) is an essential element of culture in Ethiopia. Join us on a
             coffee and tea trip to Ethiopia."
           </Package>
           <Package
-            img="https://i0.wp.com/www.ethiopiaobserver.com/wp-content/uploads/2019/06/DSC02363.jpg?fit=2160%2C1620&ssl=1"
-            title="Historic Route & Lalibela Tour"
-          >
-            Drinking coffee (which in the Amharic language is called <b>buna</b>
-            ) is an essential element of culture in Ethiopia. Join us on a
-            coffee and tea trip to Ethiopia."
-          </Package>
-          <Package
-            img="https://i0.wp.com/www.ethiopiaobserver.com/wp-content/uploads/2019/06/DSC02363.jpg?fit=2160%2C1620&ssl=1"
+            img="/hawassa.webp"
             title="South Ethiopia Tour Omo Valley Tribes"
           >
             Drinking coffee (which in the Amharic language is called <b>buna</b>
