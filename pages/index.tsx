@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar'
 import Package from '../components/Package'
 import ProductCard from '../components/ProductCard'
 import SearchBar from '../components/SearchBar'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -91,6 +92,7 @@ const Home: NextPage = () => {
           </ProductCard>
         </div>
       </main>
+      <Footer />
     </>
   )
 }

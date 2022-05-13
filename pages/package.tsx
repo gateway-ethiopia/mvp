@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { ReactNode } from 'react'
 
+import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 
 export default function Package() {
@@ -10,8 +11,8 @@ export default function Package() {
         <title>View Package</title>
       </Head>
       <NavBar />
-      <section className="grid grid-cols-2">
-        <section className="pt-10 pb-36 px-10 h-screen overflow-scroll">
+      <section className="grid grid-cols-3">
+        <section className="col-span-2 pt-10 pb-36 px-10 h-screen overflow-scroll">
           <h1 className="text-4xl font-bold mb-5">
             South Ethiopia Tour Omo Valley Tribes
           </h1>
@@ -66,7 +67,7 @@ export default function Package() {
           </section>
         </section>
 
-        <section className="h-screen overflow-hidden">
+        <section className=" col-span-1 h-screen overflow-hidden">
           <iframe
             width="100%"
             height="100%"
@@ -74,6 +75,7 @@ export default function Package() {
           />
         </section>
       </section>
+      <Footer />
     </>
   )
 }

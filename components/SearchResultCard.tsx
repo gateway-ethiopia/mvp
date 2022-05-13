@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { ReactNode } from 'react'
 
 const Square = ({ color, title }: { color: string; title: string }) => (
@@ -42,7 +44,9 @@ export default function SearchResultCard({
               {numOfAttractions} ATTRACTION{numOfAttractions > 1 ? 'S' : ''}
             </h5>
           </div>
-          <button className="btn btn-primary">View Package</button>
+          <Link href="/package">
+            <a className="btn btn-primary">View Package</a>
+          </Link>
         </div>
       </div>
     </div>

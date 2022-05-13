@@ -10,6 +10,7 @@ import {
 import NavBar from '../components/NavBar'
 import Review from '../components/Review'
 import Package from '../components/Package'
+import Footer from '../components/Footer'
 
 export default function TravelGuide() {
   return (
@@ -136,6 +137,8 @@ export default function TravelGuide() {
           </div>
         </section>
       </div>
+
+      <Footer />
     </>
   )
 }

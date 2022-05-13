@@ -28,7 +28,9 @@ function SearchBar() {
           placeholder="Start your search"
           className="pl-5 bg-transparent outline-none flex-grow text-lg text-white placeholder-white"
         />
-        <SearchIcon className="w-8 bg-primary text-white rounded-full p-2 hidden sm:inline-flex mx-2 cursor-pointer" />
+        <Link href="/search">
+          <SearchIcon className="w-8 bg-primary text-white rounded-full p-2 hidden sm:inline-flex mx-2 cursor-pointer" />
+        </Link>
       </div>
       {searchInput && (
         <div className="z-10 flex col-span-3 mx-auto mt-3 bg-white p-4 space-x-10">
@@ -50,26 +52,18 @@ function SearchBar() {
               >
                 Cancel
               </button>
-              <Link
-                href={{
-                  pathname: '/search',
-                  query: {
-                    location: searchInput,
-                    startDate: startDate?.toISOString(),
-                    endDate: endDate?.toISOString(),
-                  },
-                }}
-              >
-                <button className="flex-grow text-primary cursor-pointer">
-                  Search
-                </button>
+
+              <Link href="/search">
+                <a className="flex-grow text-primary cursor-pointer">Search</a>
               </Link>
             </div>
           </div>
           <div className="space-y-3">
-            <div className="flex items-center space-x-4">
-              <FilterIcon className="w-7" />
-              <h1 className="text-2xl font-semibold text-gray-700">Filter</h1>
+            <div className="flex items-center ">
+              <FilterIcon className="w-4 text-primary" />
+              <h1 className="text-xl font-semibold text-primary uppercase">
+                Filter
+              </h1>
             </div>
             <div className="space-y-4">
               <p className="text-lg font-semibold ">Price</p>
