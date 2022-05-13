@@ -23,7 +23,7 @@ export default function TravelGuide() {
         style={{ backgroundImage: 'url(/afar-salt.jpg)' }}
       />
       <div>
-        <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="container px-4 mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-4">
           <article className="col-span-2 prose lg:prose-xl">
             <h3>Timeless Ethiopia</h3>
             <p>
@@ -64,7 +64,7 @@ export default function TravelGuide() {
         </div>
 
         <section className="bg-base-200">
-          <div className="container mx-auto py-10">
+          <div className="container px-4 mx-auto py-10">
             <h1 className="my-10 text-2xl">Packages we provide</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <Package
@@ -95,7 +95,7 @@ export default function TravelGuide() {
           </div>
         </section>
         <section>
-          <div className="container mx-auto py-10">
+          <div className="container px-4 mx-auto py-10">
             <h1 className="my-10 text-2xl">Reviews and Ratings</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <Review

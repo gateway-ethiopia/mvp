@@ -5,12 +5,12 @@ export default function Search() {
   return (
     <section className="bg-base-100">
       <NavBar />
-      <section className="container mx-auto">
+      <section className="container px-4 mx-auto">
         <h1 className="my-6 text-2xl">
           Search results for <b className="text-primary font-bold">Valley</b>
         </h1>
       </section>
-      <section className="container mx-auto min-h-screen">
+      <section className="container px-4 mx-auto min-h-screen">
         <SearchResultCard
           img="https://www.timelessethiopia.com/images/tours/xtrip_south_ethiopia_omo.jpg.pagespeed.ic.gpH2yzc_dS.webp"
           title="South Ethiopia Tour Omo Valley Tribes"
