@@ -25,9 +25,9 @@ function SearchBar() {
           onChange={(e) => setSearchInput(e.target.value)}
           type="text"
           placeholder="Start your search"
-          className="pl-5 bg-transparent outline-none flex-grow text-lg text-primary-content"
+          className="pl-5 bg-transparent outline-none flex-grow text-lg text-white placeholder-white"
         />
-        <SearchIcon className="w-8 bg-primary text-primary-content rounded-full p-2 hidden sm:inline-flex mx-2 cursor-pointer" />
+        <SearchIcon className="w-8 bg-primary text-white rounded-full p-2 hidden sm:inline-flex mx-2 cursor-pointer" />
       </div>
       {searchInput && (
         <div className="flex flex-col col-span-3 mx-auto mt-3 bg-white p-4">
@@ -39,6 +39,7 @@ function SearchBar() {
               setStartDate(ranges.Selection.startDate)
               setEndDate(ranges.Selection.endDate)
             }}
+            className="z-10"
           />
           <div className="flex text-sm font-semibold">
             <button onClick={() => setSearchInput('')} className="flex-grow">

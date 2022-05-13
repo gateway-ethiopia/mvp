@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import NavBar from '../components/NavBar'
 import Package from '../components/Package'
+import ProductCard from '../components/ProductCard'
 import SearchBar from '../components/SearchBar'
 
 const Home: NextPage = () => {
@@ -20,17 +21,17 @@ const Home: NextPage = () => {
             backgroundImage: 'url(/sample.jpg)',
           }}
         >
-          <div className="hero-overlay bg-opacity-60"></div>
+          <div className="hero-overlay bg-opacity-50"></div>
           <div className="absolute top-20">
             <SearchBar />
           </div>
           <div className="hero-content text-center">
-            <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Lorem, ipsum dolor.</h1>
+            <div className="max-w-md text-white">
+              <h1 className="text-5xl font-bold">Gondar</h1>
               <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                omnis recusandae rerum exercitationem ad maiores aut quibusdam,
+                velit veniam at.
               </p>
             </div>
           </div>
@@ -64,6 +65,36 @@ const Home: NextPage = () => {
             ) is an essential element of culture in Ethiopia. Join us on a
             coffee and tea trip to Ethiopia."
           </Package>
+        </div>
+      </main>
+
+      <main className="container mx-auto px-4 py-32">
+        <h1 className="text-5xl mb-10">Featured Products</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <ProductCard
+            price={10}
+            img="https://haddisart.com/uploads/arts/1650401598286-art-IMG_20220304_230651_530.jpg"
+            title="Lion of judah"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis, eum.
+          </ProductCard>
+          <ProductCard
+            price={20}
+            img="https://haddisart.com/uploads/arts/1626174297764-art-FB_IMG_16260666812065696.jpg"
+            title="Wall clock string art"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis, eum.
+          </ProductCard>
+          <ProductCard
+            price={30}
+            img="https://haddisart.com/uploads/arts/1647367030924-art-IMG_6347.JPG"
+            title="Mama Africa"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis, eum.
+          </ProductCard>
         </div>
       </main>
     </>
