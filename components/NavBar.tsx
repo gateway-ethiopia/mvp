@@ -14,7 +14,7 @@ export default function NavBar() {
   }, [darkMode])
 
   return (
-    <div className="z-30 fixed navbar bg-base-200">
+    <div className="z-30 fixed top-0 navbar bg-base-200">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">
           <span className="text-primary">Gateway</span> Ethiopia

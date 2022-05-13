@@ -1,10 +1,17 @@
+import Head from 'next/head'
+
 import NavBar from '../components/NavBar'
 import SearchResultCard from '../components/SearchResultCard'
 
 export default function Search() {
   return (
-    <section className="bg-base-100">
+    <>
+      <Head>
+        <title>Search results</title>
+      </Head>
+
       <NavBar />
+
       <section className="container px-4 mx-auto">
         <h1 className="my-6 text-2xl">
           Search results for <b className="text-primary font-bold">Valley</b>
@@ -25,6 +32,6 @@ export default function Search() {
           one of them culturally unique.
         </SearchResultCard>
       </section>
-    </section>
+    </>
   )
 }
